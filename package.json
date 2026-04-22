@@ -1,9 +1,11 @@
 {
   "name": "fischer-detector-root",
   "private": true,
+  "workspaces": [
+    "project/web"
+  ],
   "scripts": {
-    "install-all": "npm install --prefix project/web",
-    "build": "npm i --prefix project/web && npm run build --prefix project/web && cp -r project/web/dist .",
-    "dev": "npm run dev --prefix project/web"
+    "build": "npm run build --workspace=web && cp -r project/web/dist .",
+    "dev": "npm run dev --workspace=web"
   }
 }
