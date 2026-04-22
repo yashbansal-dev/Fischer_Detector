@@ -1,0 +1,11 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+tldextract
+urllib3
+fastapi
+uvicorn
+joblib
+python-multipart
